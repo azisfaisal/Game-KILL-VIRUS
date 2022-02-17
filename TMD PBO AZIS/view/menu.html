@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+<body background="./assets/img/background.jpg" alt="image" style="background-size: cover;"></body>
+<audio src="./assets/audio/menu1.mp3" type="audio/mpeg" autoplay loop></audio>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<title>KILL THE VIRUS</title>
+</head>
+
+<body>
+    <div style="margin-left:450px; margin-right:450px; margin-top:150px;">
+        <div class="card p-3 text-center">
+            <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Press Start 2P', cursive;">KILL THE VIRUS</h5>
+                <hr class="my-4">
+                <form action="./controller/create.php" method="POST">
+                    <div class="form-group row mt-4 mb-4">
+                        <label class="col-sm-4 col-form-label">Username</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="username" class="form-control" id="inputPassword" required>
+                        </div>
+                    </div>
+                    <div style="overflow-y:auto; height:150px;">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Username</th>
+                                    <th scope="col">Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                DATA_TABEL
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <button type="submit" name="button" class="btn btn-primary pl-4 pr-4">MULAI GAME !</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+<script type="text/javascript">
+    function keluar() {
+        window.close();
+    }
+
+</script>
+
+</html>
